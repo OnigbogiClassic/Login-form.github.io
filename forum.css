@@ -1,0 +1,114 @@
+/* *, html, body {
+    margin: 0;
+    padding: 0;
+} not like like this */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
+.container {
+    width: 50vw;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "login";
+    box-shadow: 0 0 17px 10px rgb(0 0 0 / 30%);
+    border-radius: 20px;
+   background-color: #E0C3FC;
+    overflow: hidden;
+    position: relative;
+}
+
+/*.stripes {
+    background: repeating-linear-gradient(
+        -45deg,
+        #fff 0px,
+         #fff 10px,
+         #777777 10px,
+          #777777 20px
+    );
+}*/
+
+.create {
+    /* height: 40px;   */
+    padding: 0.6rem;
+    width: 5cm;
+    border-radius: 20px;
+    margin-top: 50px;
+    color: #000;
+}
+
+/* instead of height use padding ,
+
+the parent is the .container thats where positon relative should be not on the .design*/
+
+/* .design {
+    grid-area: design;
+    display: none;
+}
+.login{
+
+} */
+.text-input{
+    margin: 10px;
+    position: relative;
+}
+.login-btn {
+    padding: 0.6rem 0;
+    width: 80%;
+    margin: 10px;
+    border-radius: 20px;
+    border-color: pink;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+   color: white;
+}
+.pill-1 {
+    padding: 0.6rem 0;
+    border-radius: 50px;
+    height: 330px;
+    width: 100px;
+    rotate: 45deg;
+    background-color: #8EC5FC;
+}
+
+.forget a {
+    text-align: center;
+}
+
+/* .fa-solid fa-lock{
+
+}
+.fa-solid fa-arrow-right-long {
+    
+}
+you can just use .create i and .text-input i for the icon styling */
+
+.login {
+    position: absolute;
+    right: 5%;
+    top: 35%;
+}
+.title {
+    margin: 10px;
+    margin-left: 30px;
+    color: rgb(251, 252, 247);
+}
+.forget {
+    color: black;
+    margin: 10px;
+    margin-left: 30px;
+}
